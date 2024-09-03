@@ -1,0 +1,148 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Clone</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <!-- Sidebar Header -->
+            <div class="sidebar-header">
+                <img src="https://media-hyd1-1.cdn.whatsapp.net/v/t61.24694-24/394531429_3841090069506684_8423638962754430999_n.jpg?ccb=11-4&oh=01_Q5AaINHhfMWKWvo5ZuO2EZWJyxGZLyr-vKzXvv5gik1UH6nl&oe=66E4793F&_nc_sid=5e03e0&_nc_cat=107" alt="Profile" onclick="openProfileModal()">
+                <div class="icons">
+                    <i class="fas fa-camera" onclick="openCamera()"></i>
+                    <i class="fas fa-comment-alt" onclick="startNewChat()"></i>
+                    <i class="fas fa-ellipsis-v" onclick="openMenu()"></i>
+                </div>
+            </div>
+            <!-- Search Bar -->
+            <div class="search-bar">
+                <input type="text" placeholder="Search or start new chat" onclick="toggleSearchBar()">
+            </div>
+            <!-- User List -->
+            <div class="user-list">
+                <div class="user-item" onclick="openChat('Friend 1')">
+                    <img src="https://media-hyd1-1.cdn.whatsapp.net/v/t61.24694-24/400985464_2397754763949685_5064968724371641936_n.jpg?ccb=11-4&oh=01_Q5AaIDZV0bHVVPU6-jg0LLvXWGwJJ-WaOszskJvPsIShvDZC&oe=66DDCDF4&_nc_sid=5e03e0&_nc_cat=105" alt="Friend 1">
+                    <div class="user-details">
+                        <strong>Adarsh Jukontwar</strong><br>
+                        <small>Last message...</small>
+                    </div>
+                </div>
+                <div class="user-item" onclick="openChat('Friend 2')">
+                    <img src="https://media-hyd1-1.cdn.whatsapp.net/v/t61.24694-24/427379038_2345544568973179_6559030018634692200_n.jpg?ccb=11-4&oh=01_Q5AaIJ5gY4oS3m7g6OfEcFEmIkAlqjjiJ1pWLoVH4EZe0kJs&oe=66E40FD0&_nc_sid=5e03e0&_nc_cat=107" alt="Friend 2">
+                    <div class="user-details">
+                        <strong>Pankaj Chavhan</strong><br>
+                        <small>Last message...</small>
+                    </div>
+                </div>
+                <div class="user-item" onclick="openChat('Friend 2')">
+                    <img src="https://media-hyd1-1.cdn.whatsapp.net/v/t61.24694-24/453775544_1212226523129449_7540055532568731646_n.jpg?ccb=11-4&oh=01_Q5AaIAl-MaTx0ly1tQJA0Vsgm0e8BBKAvJfRQrDfMwTh5pS8&oe=66DDCF15&_nc_sid=5e03e0&_nc_cat=107" alt="Friend 2">
+                    <div class="user-details">
+                        <strong>Pankaj Narwade</strong><br>
+                        <small>Last message...</small>
+                    </div>
+                </div>
+                <div class="user-item" onclick="openChat('Friend 2')">
+                    <img src="https://media-hyd1-1.cdn.whatsapp.net/v/t61.24694-24/456971697_881472347187612_5084069188432989429_n.jpg?ccb=11-4&oh=01_Q5AaINnZA9fU5nxR6plKNlZH2hH5Z9MQ3idUfJcIZnFS3VHH&oe=66E26125&_nc_sid=5e03e0&_nc_cat=106" alt="Friend 2">
+                    <div class="user-details">
+                        <strong>Kajal Fatale</strong><br>
+                        <small>Last message...</small>
+                    </div>
+                </div>
+                <div class="user-item" onclick="openChat('Friend 2')">
+                    <img src="https://media-hyd1-1.cdn.whatsapp.net/v/t61.24694-24/411204158_829044812706996_8013287115909525501_n.jpg?ccb=11-4&oh=01_Q5AaICnuZdf4ffeP2HxrYqVxOHTGmRQu9YRv3rlO4bkT4Qfz&oe=66E3F750&_nc_sid=5e03e0&_nc_cat=101" alt="Friend 2">
+                    <div class="user-details">
+                        <strong>Manasi</strong><br>
+                        <small>Last message...</small>
+                    </div>
+                </div>
+                <div class="user-item" onclick="openChat('Friend 2')">
+                    <img src="https://media-hyd1-1.cdn.whatsapp.net/v/t61.24694-24/455800627_1581409432412198_345931964241885359_n.jpg?ccb=11-4&oh=01_Q5AaIFEU71srsn3rQWZ1zqoK9A2pXy1R0Q9I3Ebs-I2QYoH4&oe=66E48711&_nc_sid=5e03e0&_nc_cat=102" alt="Friend 2">
+                    <div class="user-details">
+                        <strong>Prashant Kale</strong><br>
+                        <small>Last message...</small>
+                    </div>
+                </div>
+                <div class="user-item" onclick="openChat('Friend 2')">
+                    <img src="https://media-hyd1-1.cdn.whatsapp.net/v/t61.24694-24/455132559_819363590356256_4484042057165635255_n.jpg?ccb=11-4&oh=01_Q5AaIOWaL_xm6zg0s1N44rnK5KE1hCduTlNFUwVpkfeYLU-S&oe=66DDD708&_nc_sid=5e03e0&_nc_cat=102" alt="Friend 2">
+                    <div class="user-details">
+                        <strong>Nilesh Ade</strong><br>
+                        <small>Last message...</small>
+                    </div>
+                </div>
+                <!-- Add more friends as needed -->
+            </div>
+        </div>
+
+        <!-- Chat Area -->
+        <div class="chat-area">
+            <div class="chat-header">
+                <img src="friend1.jpg" alt="Friend 1">
+                <div class="user-name">Friend 1</div>
+                <div class="icons">
+                    <i class="fas fa-search"></i>
+                    <i class="fas fa-paperclip" onclick="openAttachmentOptions()"></i>
+                    <i class="fas fa-smile" onclick="toggleEmojiPicker()"></i>
+                </div>
+            </div>
+            <div class="chat-messages">
+                <div class="message received">
+                    <div class="content">
+                        Hi! This is Friend 1.
+                    </div>
+                    <div class="timestamp">Now</div>
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Type a message">
+                <i class="fas fa-camera" onclick="openCamera()"></i>
+                <i class="fas fa-paperclip" onclick="openAttachmentOptions()"></i>
+                <i class="fas fa-smile" onclick="toggleEmojiPicker()"></i>
+                <button class="btn btn-primary" onclick="sendMessage()">Send</button>
+            </div>
+            <div class="emoji-picker" id="emoji-picker">
+                <div>😄</div><div>😅</div><div>😆</div><div>😉</div><div>😊</div>
+                <div>😎</div><div>😍</div><div>😘</div><div>🥰</div><div>😗</div>
+                <div>😙</div><div>😚</div><div>🤗</div><div>🤩</div><div>🤔</div>
+                <div>🤨</div><div>😐</div><div>😑</div><div>😶</div><div>🙄</div>
+                <div>😏</div><div>😣</div><div>😥</div><div>😮</div><div>😯</div>
+                <div>😲</div><div>😴</div><div>🤤</div><div>😪</div><div>😫</div>
+                <div>😵</div><div>🤯</div><div>🤠</div><div>🥳</div><div>😷</div>
+                <div>🤒</div><div>🤕</div><div>🤑</div><div>🤗</div><div>🤫</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Camera Overlay -->
+    <div id="camera-overlay">
+        <div id="camera-container">
+            <video id="camera-feed" autoplay></video>
+            <button id="capture-button">Capture</button>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
+
+
+
